@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taqi Raza | Data Analyst & Economics Professional</title>
+    <meta name="description" content="Taqi Raza - Aspiring Business & Data Analyst specializing in Power BI, Excel, SQL, and economic analysis. Carleton University Economics graduate.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- AI Particle Canvas Background -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-bracket">{</span> TR <span class="logo-bracket">}</span>
+            </a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#hero" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#stats" class="nav-link">Impact</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light mode">
+                    <i class="fas fa-moon" id="theme-icon"></i>
+                </button>
+                <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-chart-line"></i>
+                    <span>Aspiring Business & Data Analyst</span>
+                </div>
+                <h1 class="hero-name">
+                    <span class="greeting" id="greeting">Hello, I'm</span>
+                    <span class="name-highlight">Taqi Raza</span>
+                </h1>
+                <div class="hero-title-wrapper">
+                    <span class="hero-title" id="typed-text"></span>
+                    <span class="cursor">|</span>
+                </div>
+                <p class="hero-description">
+                    Economics graduate from Carleton University transforming complex datasets
+                    into actionable business insights. Passionate about data-driven decision making,
+                    dashboard development, and economic analysis.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-chart-bar"></i> View Projects
+                    </a>
+                    <a href="Taqi's Resume 2025.docx" class="btn btn-secondary" download>
+                        <i class="fas fa-download"></i> Download Resume
+                    </a>
+                    <a href="https://www.linkedin.com/in/taqiraza1" target="_blank" class="btn btn-outline">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                </div>
+                <div class="hero-indicators">
+                    <div class="indicator">
+                        <span class="indicator-icon"><i class="fas fa-map-marker-alt"></i></span>
+                        <span>Ottawa, Ontario</span>
+                    </div>
+                    <div class="indicator">
+                        <span class="indicator-icon"><i class="fas fa-graduation-cap"></i></span>
+                        <span>B.Econ, Carleton University</span>
+                    </div>
+                    <div class="indicator">
+                        <span class="indicator-icon"><i class="fas fa-globe"></i></span>
+                        <span>Open to Relocation</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image-wrapper">
+                <div class="hero-image-container">
+                    <div class="image-glow"></div>
+                    <div class="image-ring"></div>
+                    <img src="taqi2.jpeg" alt="Taqi Raza" class="hero-image">
+                </div>
+                <div class="floating-card card-1">
+                    <i class="fas fa-chart-pie"></i>
+                    <span>Power BI</span>
+                </div>
+                <div class="floating-card card-2">
+                    <i class="fas fa-table"></i>
+                    <span>Excel</span>
+                </div>
+                <div class="floating-card card-3">
+                    <i class="fas fa-database"></i>
+                    <span>SQL</span>
+                </div>
+                <div class="floating-card card-4">
+                    <i class="fas fa-coins"></i>
+                    <span>Economics</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-user"></i> About Me</span>
+                <h2 class="section-title">Bridging Economics <span class="accent">&</span> Data Analytics</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>
+                        I'm a detail-oriented Economics graduate with hands-on experience building dashboards,
+                        developing automated reports, and translating complex datasets into clear insights for
+                        both technical and non-technical stakeholders.
+                    </p>
+                    <p>
+                        With a foundation in economic theory and practical experience spanning energy infrastructure
+                        at <strong>Enbridge Gas</strong>, aerospace supply chains at <strong>Star Navigation Systems</strong>,
+                        and aviation training analytics at <strong>Qatar Airways</strong>, I bring a unique
+                        cross-industry perspective to data analysis.
+                    </p>
+                    <p>
+                        I'm known for being curious, collaborative, and proactive in identifying opportunities
+                        to enhance data quality and reporting efficiency. My goal is to leverage data analytics
+                        to drive smarter business decisions and create measurable impact.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <div class="highlight-icon"><i class="fas fa-bullseye"></i></div>
+                            <div>
+                                <h4>Data-Driven Insights</h4>
+                                <p>Transforming raw data into strategic business recommendations</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon"><i class="fas fa-cogs"></i></div>
+                            <div>
+                                <h4>Process Optimization</h4>
+                                <p>Streamlining workflows and automating reporting systems</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon"><i class="fas fa-handshake"></i></div>
+                            <div>
+                                <h4>Stakeholder Communication</h4>
+                                <p>Making complex data accessible for decision-makers</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="dashboard-panel">
+                        <div class="panel-header">
+                            <div class="panel-dot"></div>
+                            <div class="panel-dot"></div>
+                            <div class="panel-dot"></div>
+                            <span><i class="fas fa-chart-pie" style="margin-right:6px"></i>Pipeline Safety Dashboard — Enbridge Gas</span>
+                        </div>
+                        <div class="dashboard-body">
+                            <!-- KPI Row -->
+                            <div class="dash-kpi-row">
+                                <div class="dash-kpi">
+                                    <span class="dash-kpi-value green">+20%</span>
+                                    <span class="dash-kpi-label">Productivity</span>
+                                </div>
+                                <div class="dash-kpi">
+                                    <span class="dash-kpi-value blue">102</span>
+                                    <span class="dash-kpi-label">Docs Audited</span>
+                                </div>
+                                <div class="dash-kpi">
+                                    <span class="dash-kpi-value orange">-15%</span>
+                                    <span class="dash-kpi-label">Discrepancies</span>
+                                </div>
+                                <div class="dash-kpi">
+                                    <span class="dash-kpi-value purple">-30%</span>
+                                    <span class="dash-kpi-label">Retrieval Time</span>
+                                </div>
+                            </div>
+                            <!-- Chart Area -->
+                            <div class="dash-charts">
+                                <div class="dash-chart-left">
+                                    <span class="dash-chart-title">Safety Findings by Quarter</span>
+                                    <div class="dash-bar-chart">
+                                        <div class="dash-bar-group">
+                                            <div class="dash-bar-stack">
+                                                <div class="dash-bar resolved" style="height:45%"></div>
+                                                <div class="dash-bar open" style="height:30%"></div>
+                                            </div>
+                                            <span>Q1</span>
+                                        </div>
+                                        <div class="dash-bar-group">
+                                            <div class="dash-bar-stack">
+                                                <div class="dash-bar resolved" style="height:55%"></div>
+                                                <div class="dash-bar open" style="height:20%"></div>
+                                            </div>
+                                            <span>Q2</span>
+                                        </div>
+                                        <div class="dash-bar-group">
+                                            <div class="dash-bar-stack">
+                                                <div class="dash-bar resolved" style="height:70%"></div>
+                                                <div class="dash-bar open" style="height:12%"></div>
+                                            </div>
+                                            <span>Q3</span>
+                                        </div>
+                                        <div class="dash-bar-group">
+                                            <div class="dash-bar-stack">
+                                                <div class="dash-bar resolved" style="height:85%"></div>
+                                                <div class="dash-bar open" style="height:8%"></div>
+                                            </div>
+                                            <span>Q4</span>
+                                        </div>
+                                    </div>
+                                    <div class="dash-legend">
+                                        <span class="dash-legend-item"><span class="dot resolved"></span>Resolved</span>
+                                        <span class="dash-legend-item"><span class="dot open"></span>Open</span>
+                                    </div>
+                                </div>
+                                <div class="dash-chart-right">
+                                    <span class="dash-chart-title">Compliance Rate</span>
+                                    <div class="dash-donut-wrapper">
+                                        <svg class="dash-donut" viewBox="0 0 120 120">
+                                            <circle cx="60" cy="60" r="50" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="12"/>
+                                            <circle class="donut-fill" cx="60" cy="60" r="50" fill="none" stroke="#2563EB" stroke-width="12" stroke-dasharray="272" stroke-dashoffset="41" stroke-linecap="round" transform="rotate(-90 60 60)"/>
+                                            <circle cx="60" cy="60" r="38" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="8"/>
+                                            <circle cx="60" cy="60" r="38" fill="none" stroke="#10b981" stroke-width="8" stroke-dasharray="239" stroke-dashoffset="48" stroke-linecap="round" transform="rotate(-90 60 60)"/>
+                                        </svg>
+                                        <div class="donut-center">
+                                            <span class="donut-value">85%</span>
+                                            <span class="donut-label">Overall</span>
+                                        </div>
+                                    </div>
+                                    <div class="dash-legend" style="margin-top:8px">
+                                        <span class="dash-legend-item"><span class="dot" style="background:#2563EB"></span>Regulatory</span>
+                                        <span class="dash-legend-item"><span class="dot" style="background:#10b981"></span>Internal</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Trend Line -->
+                            <div class="dash-trend">
+                                <span class="dash-chart-title">Response Time Trend (Days)</span>
+                                <svg class="trend-line-svg" viewBox="0 0 320 60" preserveAspectRatio="none">
+                                    <defs>
+                                        <linearGradient id="trendGrad" x1="0" y1="0" x2="0" y2="1">
+                                            <stop offset="0%" stop-color="#2563EB" stop-opacity="0.3"/>
+                                            <stop offset="100%" stop-color="#2563EB" stop-opacity="0"/>
+                                        </linearGradient>
+                                    </defs>
+                                    <path class="trend-area" d="M0,45 Q40,42 80,38 T160,28 T240,18 T320,8 L320,60 L0,60 Z" fill="url(#trendGrad)"/>
+                                    <path class="trend-path" d="M0,45 Q40,42 80,38 T160,28 T240,18 T320,8" fill="none" stroke="#2563EB" stroke-width="2" stroke-linecap="round"/>
+                                    <circle cx="0" cy="45" r="3" fill="#2563EB"/>
+                                    <circle cx="80" cy="38" r="3" fill="#2563EB"/>
+                                    <circle cx="160" cy="28" r="3" fill="#2563EB"/>
+                                    <circle cx="240" cy="18" r="3" fill="#2563EB"/>
+                                    <circle cx="320" cy="8" r="3" fill="#2563EB"/>
+                                </svg>
+                                <div class="trend-labels">
+                                    <span>Sep '22</span><span>Nov</span><span>Feb '23</span><span>May</span><span>Aug '23</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Stats Section -->
+    <section class="section stats" id="stats">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-chart-bar"></i> By The Numbers</span>
+                <h2 class="section-title">Measurable <span class="accent">Impact</span></h2>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-card" data-aos="fade-up">
+                    <div class="stat-icon"><i class="fas fa-tachometer-alt"></i></div>
+                    <div class="stat-number" data-target="20">0</div>
+                    <div class="stat-suffix">%</div>
+                    <div class="stat-label">Team Productivity Improvement</div>
+                    <div class="stat-detail">via Power BI dashboards at Enbridge</div>
+                </div>
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-icon"><i class="fas fa-database"></i></div>
+                    <div class="stat-number" data-target="5000">0</div>
+                    <div class="stat-suffix">+</div>
+                    <div class="stat-label">Records Validated</div>
+                    <div class="stat-detail">with 100% accuracy at Qatar Airways</div>
+                </div>
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-icon"><i class="fas fa-clock"></i></div>
+                    <div class="stat-number" data-target="30">0</div>
+                    <div class="stat-suffix">%</div>
+                    <div class="stat-label">Report Retrieval Time Reduced</div>
+                    <div class="stat-detail">through SharePoint workflow automation</div>
+                </div>
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-icon"><i class="fas fa-plane"></i></div>
+                    <div class="stat-number" data-target="3">0</div>
+                    <div class="stat-suffix"></div>
+                    <div class="stat-label">Industries Impacted</div>
+                    <div class="stat-detail">Energy, Aerospace & Aviation</div>
+                </div>
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="stat-icon"><i class="fas fa-file-alt"></i></div>
+                    <div class="stat-number" data-target="100">0</div>
+                    <div class="stat-suffix">+</div>
+                    <div class="stat-label">Documents Audited</div>
+                    <div class="stat-detail">Reducing regulatory discrepancies by 15%</div>
+                </div>
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="stat-icon"><i class="fas fa-award"></i></div>
+                    <div class="stat-number" data-target="6">0</div>
+                    <div class="stat-suffix"></div>
+                    <div class="stat-label">Years on Dean's Honor List</div>
+                    <div class="stat-detail">Consistent academic excellence</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section experience" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-briefcase"></i> Career Journey</span>
+                <h2 class="section-title">Professional <span class="accent">Experience</span></h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-marker">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Integrity Safety Case Intern</h3>
+                                <span class="company">
+                                    <i class="fas fa-building"></i> Enbridge Gas — North York, ON
+                                </span>
+                            </div>
+                            <span class="timeline-date">Sep 2022 — Aug 2023</span>
+                        </div>
+                        <ul class="timeline-bullets">
+                            <li>
+                                <i class="fas fa-chevron-right"></i>
+                                Built Power BI dashboards improving pipeline safety visibility, boosting team productivity by <strong>20%</strong>
+                            </li>
+                            <li>
+                                <i class="fas fa-chevron-right"></i>
+                                Audited <strong>100+ contract documents</strong>, reducing regulatory discrepancies by <strong>15%</strong>
+                            </li>
+                            <li>
+                                <i class="fas fa-chevron-right"></i>
+                                Implemented SharePoint workflow cutting report retrieval time by <strong>30%</strong>
+                            </li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">Power BI</span>
+                            <span class="tag">SharePoint</span>
+                            <span class="tag">Data Auditing</span>
+                            <span class="tag">Compliance</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-marker">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Engineering Intern</h3>
+                                <span class="company">
+                                    <i class="fas fa-building"></i> Star Navigation Systems — Brampton, ON
+                                </span>
+                            </div>
+                            <span class="timeline-date">May 2022 — Aug 2022</span>
+                        </div>
+                        <ul class="timeline-bullets">
+                            <li>
+                                <i class="fas fa-chevron-right"></i>
+                                Analyzed datasets for <strong>1,000+ aerospace components</strong>, improving supply chain tracking by <strong>25%</strong>
+                            </li>
+                            <li>
+                                <i class="fas fa-chevron-right"></i>
+                                Streamlined purchase order tracking in ERP software, reducing procurement delays
+                            </li>
+                            <li>
+                                <i class="fas fa-chevron-right"></i>
+                                Delivered operational insights informing quarterly resource planning
+                            </li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">ERP Systems</span>
+                            <span class="tag">Data Cleaning</span>
+                            <span class="tag">Supply Chain</span>
+                            <span class="tag">QA</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-marker">
+                        <i class="fas fa-plane-departure"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Technical Training Intern</h3>
+                                <span class="company">
+                                    <i class="fas fa-building"></i> Qatar Airways — Doha, Qatar
+                                </span>
+                            </div>
+                            <span class="timeline-date">May 2021 — Aug 2021</span>
+                        </div>
+                        <ul class="timeline-bullets">
+                            <li>
+                                <i class="fas fa-chevron-right"></i>
+                                Designed Power BI dashboards tracking crew training KPIs for leadership decision-making
+                            </li>
+                            <li>
+                                <i class="fas fa-chevron-right"></i>
+                                Increased training attendance by <strong>12%</strong> through data-backed scheduling
+                            </li>
+                            <li>
+                                <i class="fas fa-chevron-right"></i>
+                                Validated <strong>5,000+ records</strong> with 100% accuracy for internal audit
+                            </li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">Power BI</span>
+                            <span class="tag">Excel</span>
+                            <span class="tag">Forecasting</span>
+                            <span class="tag">Audit</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-folder-open"></i> Portfolio</span>
+                <h2 class="section-title">Featured <span class="accent">Projects</span></h2>
+            </div>
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="dashboard">Dashboards</button>
+                <button class="filter-btn" data-filter="analysis">Analysis</button>
+                <button class="filter-btn" data-filter="automation">Automation</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-category="dashboard" data-aos="fade-up">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-shield-alt"></i>
+                            <div class="placeholder-chart">
+                                <div class="bar" style="height: 60%"></div>
+                                <div class="bar" style="height: 85%"></div>
+                                <div class="bar" style="height: 45%"></div>
+                                <div class="bar" style="height: 95%"></div>
+                                <div class="bar" style="height: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Pipeline Safety Dashboard</h3>
+                        <p>Interactive Power BI dashboard tracking pipeline integrity findings, improving stakeholder response time and team productivity by 20%.</p>
+                        <div class="project-details">
+                            <div class="detail-row">
+                                <span class="detail-label">Problem:</span>
+                                <span>Fragmented safety data across departments</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Impact:</span>
+                                <span>20% productivity increase, faster response times</span>
+                            </div>
+                        </div>
+                        <div class="project-tools">
+                            <span class="tool"><i class="fas fa-chart-pie"></i> Power BI</span>
+                            <span class="tool"><i class="fas fa-table"></i> Excel</span>
+                            <span class="tool"><i class="fas fa-share-alt"></i> SharePoint</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="analysis" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image">
+                        <div class="project-placeholder analysis-theme">
+                            <i class="fas fa-boxes-stacked"></i>
+                            <div class="placeholder-chart">
+                                <div class="bar" style="height: 40%"></div>
+                                <div class="bar" style="height: 70%"></div>
+                                <div class="bar" style="height: 55%"></div>
+                                <div class="bar" style="height: 90%"></div>
+                                <div class="bar" style="height: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Aerospace Supply Chain Analytics</h3>
+                        <p>Data cleaning and analysis of 1,000+ aerospace component datasets, contributing to a 25% improvement in supply chain tracking accuracy.</p>
+                        <div class="project-details">
+                            <div class="detail-row">
+                                <span class="detail-label">Dataset:</span>
+                                <span>1,000+ aerospace component records</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Impact:</span>
+                                <span>25% improvement in tracking accuracy</span>
+                            </div>
+                        </div>
+                        <div class="project-tools">
+                            <span class="tool"><i class="fas fa-table"></i> Excel</span>
+                            <span class="tool"><i class="fas fa-cog"></i> ERP</span>
+                            <span class="tool"><i class="fas fa-broom"></i> Data Cleaning</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="dashboard" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image">
+                        <div class="project-placeholder training-theme">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div class="placeholder-chart">
+                                <div class="bar" style="height: 50%"></div>
+                                <div class="bar" style="height: 65%"></div>
+                                <div class="bar" style="height: 80%"></div>
+                                <div class="bar" style="height: 72%"></div>
+                                <div class="bar" style="height: 92%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Crew Training KPI Dashboard</h3>
+                        <p>Power BI dashboards tracking training completion KPIs for Qatar Airways, enabling leadership to reallocate resources efficiently.</p>
+                        <div class="project-details">
+                            <div class="detail-row">
+                                <span class="detail-label">Process:</span>
+                                <span>Historical data analysis & trend forecasting</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Impact:</span>
+                                <span>12% attendance increase, 15% better utilization</span>
+                            </div>
+                        </div>
+                        <div class="project-tools">
+                            <span class="tool"><i class="fas fa-chart-pie"></i> Power BI</span>
+                            <span class="tool"><i class="fas fa-table"></i> Excel</span>
+                            <span class="tool"><i class="fas fa-brain"></i> Forecasting</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="automation" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-image">
+                        <div class="project-placeholder automation-theme">
+                            <i class="fas fa-file-invoice"></i>
+                            <div class="placeholder-chart">
+                                <div class="bar" style="height: 90%"></div>
+                                <div class="bar" style="height: 70%"></div>
+                                <div class="bar" style="height: 50%"></div>
+                                <div class="bar" style="height: 35%"></div>
+                                <div class="bar" style="height: 20%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Document Workflow Automation</h3>
+                        <p>SharePoint-based workflow system centralizing safety documentation at Enbridge, dramatically reducing retrieval times and improving compliance.</p>
+                        <div class="project-details">
+                            <div class="detail-row">
+                                <span class="detail-label">Tools:</span>
+                                <span>SharePoint, automated workflows</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Impact:</span>
+                                <span>30% faster report retrieval</span>
+                            </div>
+                        </div>
+                        <div class="project-tools">
+                            <span class="tool"><i class="fas fa-share-alt"></i> SharePoint</span>
+                            <span class="tool"><i class="fas fa-robot"></i> Automation</span>
+                            <span class="tool"><i class="fas fa-check-circle"></i> Compliance</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-tools"></i> Toolkit</span>
+                <h2 class="section-title">Skills & <span class="accent">Expertise</span></h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-group" data-aos="fade-up">
+                    <div class="skill-group-header">
+                        <div class="skill-group-icon"><i class="fas fa-laptop-code"></i></div>
+                        <h3>Tools & Software</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fas fa-chart-pie"></i>
+                            <span>Power BI</span>
+                            <div class="skill-bar"><div class="skill-fill" data-level="90"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-file-excel"></i>
+                            <span>Excel (Advanced)</span>
+                            <div class="skill-bar"><div class="skill-fill" data-level="95"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>SQL</span>
+                            <div class="skill-bar"><div class="skill-fill" data-level="70"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-share-alt"></i>
+                            <span>SharePoint</span>
+                            <div class="skill-bar"><div class="skill-fill" data-level="85"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-cog"></i>
+                            <span>ERP Systems</span>
+                            <div class="skill-bar"><div class="skill-fill" data-level="75"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-google"></i>
+                            <span>Google Workspace</span>
+                            <div class="skill-bar"><div class="skill-fill" data-level="90"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-group" data-aos="fade-up" data-aos-delay="100">
+                    <div class="skill-group-header">
+                        <div class="skill-group-icon"><i class="fas fa-brain"></i></div>
+                        <h3>Analytical Skills</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fas fa-tachometer-alt"></i>
+                            <span>Dashboard Development</span>
+                            <div class="skill-bar"><div class="skill-fill" data-level="90"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-search"></i>
+                            <span>Data Analysis</span>
+                            <div class="skill-bar"><div class="skill-fill" data-level="90"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-crosshairs"></i>
+                            <span>KPI Tracking</span>
+                            <div class="skill-bar"><div class="skill-fill" data-level="85"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-robot"></i>
+                            <span>Report Automation</span>
+                            <div class="skill-bar"><div class="skill-fill" data-level="80"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Performance Metrics</span>
+                            <div class="skill-bar"><div class="skill-fill" data-level="85"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-file-contract"></i>
+                            <span>Regulatory Documentation</span>
+                            <div class="skill-bar"><div class="skill-fill" data-level="80"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-group" data-aos="fade-up" data-aos-delay="200">
+                    <div class="skill-group-header">
+                        <div class="skill-group-icon"><i class="fas fa-users"></i></div>
+                        <h3>Soft Skills</h3>
+                    </div>
+                    <div class="skill-items compact">
+                        <div class="soft-skill">
+                            <i class="fas fa-lightbulb"></i>
+                            <span>Analytical Thinking</span>
+                        </div>
+                        <div class="soft-skill">
+                            <i class="fas fa-comments"></i>
+                            <span>Communication</span>
+                        </div>
+                        <div class="soft-skill">
+                            <i class="fas fa-clock"></i>
+                            <span>Time Management</span>
+                        </div>
+                        <div class="soft-skill">
+                            <i class="fas fa-eye"></i>
+                            <span>Attention to Detail</span>
+                        </div>
+                        <div class="soft-skill">
+                            <i class="fas fa-bolt"></i>
+                            <span>Initiative</span>
+                        </div>
+                        <div class="soft-skill">
+                            <i class="fas fa-people-carry-box"></i>
+                            <span>Collaboration</span>
+                        </div>
+                        <div class="soft-skill">
+                            <i class="fas fa-handshake"></i>
+                            <span>Stakeholder Engagement</span>
+                        </div>
+                        <div class="soft-skill">
+                            <i class="fas fa-language"></i>
+                            <span>Bilingual (English & Urdu)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section education" id="education">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-graduation-cap"></i> Education</span>
+                <h2 class="section-title">Academic <span class="accent">Background</span></h2>
+            </div>
+            <div class="education-grid">
+                <div class="edu-card main-edu" data-aos="fade-up">
+                    <div class="edu-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <div class="edu-content">
+                        <h3>Bachelor of Economics (B.Econ)</h3>
+                        <span class="edu-school">Carleton University — Ottawa, Ontario</span>
+                        <span class="edu-date">Graduated April 2025</span>
+                        <div class="edu-gpa">
+                            <span class="gpa-badge">CGPA: 10.91/12 (A)</span>
+                        </div>
+                        <div class="edu-awards">
+                            <div class="award">
+                                <i class="fas fa-trophy"></i>
+                                <span>Faculty Scholarship (2019–2021)</span>
+                            </div>
+                            <div class="award">
+                                <i class="fas fa-star"></i>
+                                <span>Dean's Honor List (2019–2025)</span>
+                            </div>
+                        </div>
+                        <div class="edu-highlights">
+                            <span class="edu-tag">Microeconomics</span>
+                            <span class="edu-tag">Macroeconomics</span>
+                            <span class="edu-tag">Econometrics</span>
+                            <span class="edu-tag">Statistical Analysis</span>
+                            <span class="edu-tag">Economic Policy</span>
+                            <span class="edu-tag">Financial Markets</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-envelope"></i> Get In Touch</span>
+                <h2 class="section-title">Let's <span class="accent">Connect</span></h2>
+                <p class="section-subtitle">
+                    I'm actively seeking opportunities in business and data analytics.
+                    Let's discuss how I can add value to your team.
+                </p>
+            </div>
+            <div class="contact-grid">
+                <a href="mailto:muhammadtaqiraza117@gmail.com" class="contact-card" data-aos="fade-up">
+                    <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                    <h3>Email</h3>
+                    <p>muhammadtaqiraza117@gmail.com</p>
+                </a>
+                <a href="https://www.linkedin.com/in/taqiraza1" target="_blank" class="contact-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+                    <h3>LinkedIn</h3>
+                    <p>linkedin.com/in/taqiraza1</p>
+                </a>
+                <a href="tel:+16134062044" class="contact-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                    <h3>Phone</h3>
+                    <p>(613) 406-2044</p>
+                </a>
+                <a href="Taqi's Resume 2025.docx" download class="contact-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="contact-icon"><i class="fas fa-file-download"></i></div>
+                    <h3>Resume</h3>
+                    <p>Download Resume (DOCX)</p>
+                </a>
+            </div>
+            <div class="contact-cta">
+                <a href="mailto:muhammadtaqiraza117@gmail.com" class="btn btn-primary btn-large">
+                    <i class="fas fa-paper-plane"></i> Send Me a Message
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-bracket">{</span> TR <span class="logo-bracket">}</span>
+                </div>
+                <p class="footer-text">
+                    Designed with precision. Built with passion.
+                </p>
+                <div class="footer-socials">
+                    <a href="https://www.linkedin.com/in/taqiraza1" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:muhammadtaqiraza117@gmail.com" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+                <p class="footer-copyright">
+                    &copy; 2025 Taqi Raza. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
